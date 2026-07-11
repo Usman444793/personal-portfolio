@@ -680,6 +680,15 @@ nav{
 .nav-links,.hamburger,.overlay{
     display:none!important;
 }
+nav a:not(.logo-link){
+        display:none !important;
+    }
+    .hamburger{
+        display:none !important;
+    }
+    .logo-link{
+        display:block !important;
+    }
 .logo{
     width:110px;
     left:15px;
