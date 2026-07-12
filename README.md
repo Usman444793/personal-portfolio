@@ -2,7 +2,7 @@
 
 A modern, responsive, and high-performance personal portfolio website showcasing my projects, technical skills, certifications, and contact information.
 
-🔗 **Live Website:** *(Add your Cloudflare Pages URL here after deployment)*
+🔗 **Live Website:** https://usman444793.github.io/personal-portfolio/
 
 ---
 
