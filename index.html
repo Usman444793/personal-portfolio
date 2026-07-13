@@ -276,13 +276,10 @@
             </div>
             </div>
             <div class="contact-form">
-                <form id="contact-form" action ="https://formsubmit.co/ua655128@gmail.com" method="POST">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="text" placeholder="Your Email" required>
-                    <textarea rows="6" placeholder="Your Message" required></textarea>
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_template" value="table">
-                    <input type="text" name="_honey" style="display:none">
+                <form id="contact-form">
+                    <input type="text" name="from_name" placeholder="Your Name" required>
+                    <input type="text" name="from_email" placeholder="Your Email" required>
+                    <textarea rows="6" name="message" placeholder="Your Message" required></textarea>
                     <button type="submit">Send Message</button>
                 </form>
             </div>
@@ -294,6 +291,24 @@
     </p>
 </footer>
 </section>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+emailjs.init("-ucSdltujvZYU5IN4");
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+    emailjs.sendForm(
+        "service_lgupbvo",
+        "template_xt15kek",
+        this
+    ).then(() => {
+        alert("Message sent successfully!");
+        this.reset();
+    }).catch((error) => {
+        alert("Failed to send message.");
+        console.error(error);
+    });
+});
+</script>
 <script>
 const navbar = document.getElementById("navbar");
 const hero = document.getElementById("hero");
