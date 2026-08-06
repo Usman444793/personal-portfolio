@@ -14,18 +14,33 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-96x96.png">
     <link rel="icon" href="favicon.ico">
     <link rel="manifest" href="site.webmanifest">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
+    <div id="preloader" aria-hidden="true">
+        <div class="preloader-inner">
+            <div class="preloader-ring"></div>
+            <div class="preloader-text">Loading portfolio...</div>
+        </div>
+    </div>
     <nav id="navbar">
-            <a href ="#hero" class = "logo-link">
-            <img src ="logo.webp" alt="Logo" class="logo"  width="170" height="55"></a>
+        <a href="#hero" class="logo-link">
+            <img src="logo.webp" alt="Logo" class="logo" width="170" height="55">
+        </a>
+        <div class="nav-links">
             <a href="#about">About Me</a>
             <a href="#project">Projects</a>
             <a href="#skills">Skills</a>
             <a href="#certificates">Certificates</a>
             <a href="#contact">Contact Me</a>
+        </div>
+        <button class="hamburger" aria-label="Open navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </nav>
     <main>
     <section id ="hero">
@@ -35,7 +50,7 @@
 
             <p class="name">Usman Amjad</p>
 
-            <p class="title">Full-Stack Developer | AI Enthusiast</p>
+            <p class="title"><span class="typed-text">Full-Stack Developer | AI Enthusiast</span></p>
             <div class="social-icons">
 
                 <a href="mailto:ua655128@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
@@ -47,7 +62,7 @@
             </div>
         </div>
         <div class="right">
-            <img src="Usman Amjad.webp" alt = "Usman Amjad pic" width="650" height="800">
+            <img src="Usman Amjad.webp" alt = "Usman Amjad pic" width="650" height="800" loading="lazy">
         </div>
     </section>
     <section id="about" class="fade-up">
@@ -61,7 +76,7 @@
             <h2 class="section-heading">My Projects<br></h2>
             </div>
             <div class="project-container">
-            <div class="project-card fade-up">
+            <div class="project-card fade-up cpp">
                 <h3>Inventory Management System</h3>
                 <p>A console-based inventory management system developed using 
                     Object-Oriented Programming concepts in C++.</p>
@@ -72,7 +87,7 @@
                     </div>
                 <a href="https://github.com/Usman444793/OOP_Project" target="_blank">View Project</a>
             </div>
-            <div class="project-card fade-up">
+            <div class="project-card fade-up csharp">
             <h3>Library Management System</h3>
             <p>Console application developed in C# for managing books,
                 students and library records.</p>
@@ -82,7 +97,7 @@
                 </div>
                 <a href="https://github.com/Usman444793/Library-Management-System" target="_blank">View Project</a>
                 </div>
-                <div class="project-card fade-up">
+                <div class="project-card fade-up flask">
             <h3>Flask CRUD App</h3>
             <p>
                 Full-stack CRUD application with create, read, update and
@@ -96,7 +111,7 @@
             </div>
             <a href="https://github.com/Usman444793/CRUD-App" target="_blank">View Project</a>
             </div>
-            <div class="project-card fade-up">
+            <div class="project-card fade-up flask">
             <h3>Math Calculator</h3>
             <p>
                 A responsive mathematics calculator built using Flask and
@@ -109,7 +124,7 @@
             </div>
             <a href="https://github.com/Usman444793/Mathematics-Calcullations" target="_blank">View Project</a>
             </div>
-            <div class="project-card fade-up">
+            <div class="project-card fade-up python">
             <h3>Emotion Detection App</h3>
             <p>
                 AI-powered emotion detection web application. Currently under
@@ -122,7 +137,7 @@
             </div>
             <a href="https://github.com/Usman444793/Emotion-detector" target="_blank">View Project</a>
             </div>
-            <div class="project-card fade-up">
+            <div class="project-card fade-up python">
                 <h3>Rain Predictor</h3>
                 <p>A console-based Rain Predictor system developed using 
                     Python Libraries Pandas,Scikit-learn and Matplotlib.</p>
@@ -133,7 +148,7 @@
                     </div>
                 <a href="https://github.com/Usman444793/Rain_Predictor" target="_blank">View Project</a>
             </div>
-            <div class="project-card fade-up">
+            <div class="project-card fade-up python">
                 <h3>Titanic Survival Predictor</h3>
                 <p>A console-based Titanic Survival Predictor system developed using 
                     Python Libraries Pandas,Scikit-learn and Matplotlib.</p>
@@ -144,7 +159,7 @@
                     </div>
                 <a href="https://github.com/Usman444793/Predicting-Titanic-Survival" target="_blank">View Project</a>
             </div>
-                        <div class="project-card fade-up">
+                        <div class="project-card fade-up python">
                 <h3>Credit Card Fraud Detection</h3>
                 <p>A console-based Credit Card Fraud Detection system developed using 
                     Python Libraries Pandas,Scikit-learn and Matplotlib.</p>
@@ -156,7 +171,7 @@
                 <a href="https://github.com/Usman444793/Credit-card-fraud-detection" target="_blank">View Project</a>
             </div>
 
-            <div class="project-card fade-up">
+            <div class="project-card fade-up csharp">
                 <h3>Task Flow</h3>
                 <p>A web-based Task Manager with Registration and Task Addition and 
                     viewing system developed using Blazor Framework </p>
@@ -227,7 +242,7 @@
     </div>
     <div class="certificate-grid">
         <div class="certificate-card fade-up">
-            <img src="IBM_logo.webp" class="company-logo" alt="IBM Logo" width="60" height="60">
+            <img src="IBM_logo.webp" class="company-logo" alt="IBM Logo" width="60" height="60" loading="lazy">
             <h3>Introduction to DevOps</h3>
             <h4>Issued By IBM</h4>
             <p>Learned essential DevOps concepts including software engineering practices, cloud-native microservices, and automated continuous deployment.</p>
@@ -360,65 +375,121 @@
             <div class="contact-form">
                 <form id="contact-form">
                     <input type="text" name="from_name" placeholder="Your Name" required>
-                    <input type="text" name="from_email" placeholder="Your Email" required>
+                    <input type="email" name="from_email" placeholder="Your Email" required>
                     <textarea rows="6" name="message" placeholder="Your Message" required></textarea>
                     <button type="submit">Send Message</button>
                 </form>
             </div>
     </div>
 </main>
+<button type="button" class="back-to-top" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
     <footer>
     <p>
         © 2026 Usman Amjad • Built with HTML, CSS & JavaScript
     </p>
 </footer>
-</section>
+<div class="toast-message" aria-live="polite"></div>
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script>
 emailjs.init("-ucSdltujvZYU5IN4");
-document.getElementById("contact-form").addEventListener("submit", function(e) {
-    e.preventDefault();
-    emailjs.sendForm(
-        "service_lgupbvo",
-        "template_xt15kek",
-        this
-    ).then(() => {
-        alert("Message sent successfully!");
-        this.reset();
-    }).catch((error) => {
-        alert("Failed to send message.");
-        console.error(error);
-    });
-});
-</script>
-<script>
 const navbar = document.getElementById("navbar");
-const hero = document.getElementById("hero");
 const about = document.getElementById("about");
-const projects = document.getElementById("projects");
+const projects = document.getElementById("project");
 const skills = document.getElementById("skills");
 const certificates = document.getElementById("certificates");
 const contact = document.getElementById("contact");
-window.addEventListener("scroll", () => {
-    const scrollPos = window.scrollY + 120;
-    if (scrollPos >= contact.offsetTop) {
-        navbar.classList.add("hide");
-        return;
+const navLinks = document.querySelectorAll("nav .nav-links a");
+const hamburger = document.querySelector(".hamburger");
+const toast = document.querySelector(".toast-message");
+
+function toggleMenu() {
+    navbar.classList.toggle("open");
+    document.body.classList.toggle("menu-open");
+}
+
+hamburger.addEventListener("click", toggleMenu);
+navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+        navbar.classList.remove("open");
+        document.body.classList.remove("menu-open");
+    });
+});
+
+function setActiveLink() {
+    const navbarHeight = navbar.offsetHeight || 90;
+    const scrollPos = window.scrollY + navbarHeight + 10;
+    const sections = [about, projects, skills, certificates, contact];
+
+    if (scrollPos >= about.offsetTop) {
+        navbar.classList.add("scrolled");
     } else {
-        navbar.classList.remove("hide");
-    }
-    if (scrollPos < about.offsetTop) {
         navbar.classList.remove("scrolled");
     }
-    else if (
-        scrollPos >= about.offsetTop &&
-        scrollPos < contact.offsetTop
-    ) {
-        navbar.classList.add("scrolled");
+
+    navbar.classList.remove("hero-section", "section-dark", "contact-section");
+    if (scrollPos < about.offsetTop) {
+        navbar.classList.add("hero-section");
+    } else if (scrollPos >= contact.offsetTop) {
+        navbar.classList.add("contact-section");
+    } else {
+        navbar.classList.add("section-dark");
     }
 
+    navLinks.forEach((item) => item.classList.remove("active"));
+    for (let i = sections.length - 1; i >= 0; i--) {
+        const section = sections[i];
+        const link = document.querySelector(`nav .nav-links a[href="#${section.id}"]`);
+        if (!link) continue;
+        const sectionTop = section.offsetTop - navbarHeight - 10;
+        if (scrollPos >= sectionTop) {
+            link.classList.add("active");
+            break;
+        }
+    }
+}
+
+const backToTop = document.querySelector(".back-to-top");
+
+window.addEventListener("scroll", () => {
+    setActiveLink();
+    updateBackToTop();
 });
-document.querySelectorAll(".certificate-card").forEach(card => {
+window.addEventListener("load", () => {
+    setActiveLink();
+    hidePreloader();
+    updateBackToTop();
+});
+
+const roles = ["Full-Stack Developer", "AI Enthusiast", "Web Creator", "Problem Solver"];
+const typedText = document.querySelector(".typed-text");
+let roleIndex = 0;
+let charIndex = 0;
+let deleting = false;
+
+function updateTyping() {
+    const current = roles[roleIndex];
+    if (deleting) {
+        charIndex -= 1;
+    } else {
+        charIndex += 1;
+    }
+    typedText.textContent = current.slice(0, charIndex);
+
+    if (!deleting && charIndex === current.length) {
+        setTimeout(() => (deleting = true), 1200);
+    } else if (deleting && charIndex === 0) {
+        deleting = false;
+        roleIndex = (roleIndex + 1) % roles.length;
+    }
+    const speed = deleting ? 60 : 120;
+    setTimeout(updateTyping, deleting ? speed : speed);
+}
+updateTyping();
+
+const logoCards = document.querySelectorAll(".certificate-card");
+logoCards.forEach((card) => {
     const logo = card.querySelector(".company-logo");
     if (!logo) return;
     card.addEventListener("mouseenter", () => {
@@ -428,18 +499,74 @@ document.querySelectorAll(".certificate-card").forEach(card => {
         logo.src = "IBM_logo.webp";
     });
 });
-const observer = new IntersectionObserver((entries)=>{
-    entries.forEach(entry=>{
-        if(entry.isIntersecting){
-            entry.target.classList.add("show");
-        }
+
+const heroImage = document.querySelector(".right img");
+const observer = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            }
+        });
+    },
+    { threshold: 0.15 }
+);
+
+document.querySelectorAll(".fade-up").forEach((el) => observer.observe(el));
+
+function updateHeroImageOnScroll() {
+    const offset = window.scrollY;
+    if (!heroImage) return;
+    if (offset > 30) {
+        heroImage.classList.add("scrolled");
+    } else {
+        heroImage.classList.remove("scrolled");
+    }
+}
+window.addEventListener("scroll", updateHeroImageOnScroll);
+updateHeroImageOnScroll();
+
+function hidePreloader() {
+    const preloader = document.getElementById("preloader");
+    if (!preloader) return;
+    preloader.classList.add("loaded");
+    setTimeout(() => {
+        preloader.style.display = "none";
+    }, 550);
+}
+
+function updateBackToTop() {
+    if (!backToTop) return;
+    backToTop.classList.toggle("visible", window.scrollY > 480);
+}
+
+if (backToTop) {
+    backToTop.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
     });
-},{
-    threshold:0.1
+}
+
+document.getElementById("contact-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    emailjs
+        .sendForm("service_lgupbvo", "template_xt15kek", this)
+        .then(() => {
+            showToast("Message sent successfully!", "success");
+            this.reset();
+        })
+        .catch((error) => {
+            console.error(error);
+            showToast("Failed to send message. Please try again.", "error");
+        });
 });
-document.querySelectorAll(".fade-up").forEach((el)=>{
-    observer.observe(el);
-});
+
+function showToast(message, type) {
+    toast.textContent = message;
+    toast.classList.add("show", type);
+    window.setTimeout(() => {
+        toast.classList.remove("show", "success", "error");
+    }, 3200);
+}
 </script>
 </body>
 </html>
