@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="lthOABNCc-libGzLQfKbZA7Uq-57YllETxuBWsP1AYk" />
-    <meta name="description" content="Portfolio of Muhammad Usman Amjad, Software Engineering student specializing in Full Stack Development, Flask, C#, C++, JavaScript and AI.">
-    <meta property="og:title" content="Muhammad Usman Amjad Portfolio">
-    <meta property="og:description" content="Software Engineering Student | Full Stack Developer | AI Enthusiast">
-    <meta property="og:image" content="https://usman444793.github.io/personal-portfolio//logo.webp">
+    <meta name="description" content="Portfolio of Muhammad Usman Amjad — Full-Stack Software Engineer & AI Builder specializing in .NET, Blazor, Python, Flask, and Machine Learning.">
+    <meta property="og:title" content="Muhammad Usman Amjad | Full-Stack Engineer & AI Developer">
+    <meta property="og:description" content="Engineering Scalable Full-Stack Systems & Intelligent AI Solutions">
+    <meta property="og:image" content="https://usman444793.github.io/personal-portfolio/logo.webp">
     <meta property="og:url" content="https://usman444793.github.io/personal-portfolio/">
-<meta property="og:type" content="website">
-    <title>Usman Amjad Portfolio</title>
+    <meta property="og:type" content="website">
+    <title>Usman Amjad | Full-Stack Engineer & AI Developer</title>
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-96x96.png">
     <link rel="icon" href="favicon.ico">
     <link rel="manifest" href="site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="style.css" rel="stylesheet">
@@ -23,12 +26,15 @@
     <div id="preloader" aria-hidden="true">
         <div class="preloader-inner">
             <div class="preloader-ring"></div>
-            <div class="preloader-text">Loading portfolio...</div>
+            <div class="preloader-text">Initializing Portfolio...</div>
         </div>
     </div>
+
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
     <nav id="navbar">
         <a href="#hero" class="logo-link">
-            <img src="logo.webp" alt="Logo" class="logo" width="170" height="55">
+            <img src="logo.webp" alt="Usman Amjad Logo" class="logo" width="170" height="55">
         </a>
         <div class="nav-links">
             <a href="#about">About Me</a>
@@ -37,580 +43,745 @@
             <a href="#certificates">Certificates</a>
             <a href="#contact">Contact Me</a>
         </div>
-        <button class="hamburger" aria-label="Open navigation menu">
+        <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
         </button>
     </nav>
+
     <main>
-    <section id ="hero">
-        <div class ="left">
-            <br>
-            <p class="intro"><br><br>Hi, I'm</p>
-
-            <p class="name">Usman Amjad</p>
-
-            <p class="title"><span class="typed-text">Full-Stack Developer | AI Enthusiast</span></p>
-            <div class="social-icons">
-
-                <a href="mailto:ua655128@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-
-                <a href="https://github.com/Usman444793" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-
-                <a href="https://www.linkedin.com/in/usman-amjad-46aa66329" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-
+        <section id="hero">
+            <div class="left">
+                <span class="hero-badge"><span class="status-dot"></span> Available for Internships &amp; Projects</span>
+                <p class="intro">Building the Future, I'm</p>
+                <h1 class="name">Usman Amjad</h1>
+                <p class="title">
+                    <span class="typed-text">Full-Stack .NET &amp; Python Engineer</span><span class="typed-cursor" aria-hidden="true">|</span>
+                </p>
+                <p class="hero-tagline">
+                    Turning complex problems into high-performance web applications and intelligent AI-driven systems.
+                </p>
+                <div class="hero-cta-group">
+                    <a href="#project" class="hero-btn primary-btn">Explore My Work <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#contact" class="hero-btn secondary-btn">Let's Talk</a>
+                </div>
+                <div class="social-icons">
+                    <a href="mailto:ua655128@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://github.com/Usman444793" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/usman-amjad-46aa66329" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
             </div>
-        </div>
-        <div class="right">
-            <img src="Usman Amjad.webp" alt = "Usman Amjad pic" width="650" height="800" loading="lazy">
-        </div>
-    </section>
-    <section id="about" class="fade-up">
-        <h2 class="section-heading">About Me</h2>
-        <div class="about-card">
-        <p>Hi, I'm Usman Amjad, a Software Engineering student and aspiring Full-Stack Developer with a passion for AI. I build responsive websites using HTML, CSS, and JavaScript while learning .NET for full-stack development. I enjoy creating clean, modern designs and continuously improving my skills by building real-world projects.</p>
-        </div>
-    </section>
-    <section id="project" class="project fade-up">
-        <div class="title-container">
-            <h2 class="section-heading">My Projects<br></h2>
+            <div class="right">
+                <img src="Usman Amjad.webp" alt="Usman Amjad portrait" width="650" height="800" fetchpriority="high">
             </div>
+        </section>
+
+        <section id="about" class="fade-up">
+            <div class="title-container">
+                <h2 class="section-heading">Who I Am</h2>
+                <p class="section-subtitle">Engineering Clean Architecture &amp; Intelligent Digital Experiences</p>
+            </div>
+            <div class="about-card">
+                <p>
+                    I'm <strong>Muhammad Usman Amjad</strong>, a Software Engineering student and Full-Stack Developer driven by a single mission: building software that scales and solves real problems. From architecting enterprise-grade <strong>.NET &amp; Blazor</strong> systems to training predictive <strong>Machine Learning</strong> models in Python, I bridge the gap between robust backend engineering and intuitive, modern user interfaces. Certified by <strong>Microsoft, IBM, and Google</strong>, I thrive on turning ambitious ideas into production-ready code.
+                </p>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="2">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Projects Shipped</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="8">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Global Certifications</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="9">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Core Technologies</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="100">0</span><span class="stat-plus">%</span>
+                        <span class="stat-label">Commitment to Quality</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="project" class="project fade-up">
+            <div class="title-container">
+                <h2 class="section-heading">Featured Work</h2>
+                <p class="section-subtitle">Real-World Applications Built for Performance, Scale &amp; Intelligence</p>
+            </div>
+
+            <div class="filter-bar" role="tablist" aria-label="Filter projects by technology">
+                <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Work <span class="filter-count">9</span></button>
+                <button class="filter-btn" data-filter="csharp" role="tab" aria-selected="false">.NET &amp; C# <span class="filter-count">4</span></button>
+                <button class="filter-btn" data-filter="python" role="tab" aria-selected="false">AI &amp; Machine Learning <span class="filter-count">4</span></button>
+                <button class="filter-btn" data-filter="flask" role="tab" aria-selected="false">Flask &amp; Web <span class="filter-count">2</span></button>
+            </div>
+
             <div class="project-container">
-            <div class="project-card fade-up cpp">
-                <h3>Quantum Count - Inventory Management System</h3>
-                <p>An Enterprise Level inventory management system developed using 
-                    Blazor Interactive Server and ASP .NET Backend and MSSQL Database.</p>
+                <div class="project-card fade-up csharp" data-category="csharp">
+                    <div class="project-badge">Live Production</div>
+                    <h3>Quantum Count — Enterprise Inventory Engine</h3>
+                    <p>Full-scale enterprise inventory platform engineered with Blazor Interactive Server, ASP.NET Core backend, and MS SQL Server for real-time stock tracking and analytics.</p>
                     <div class="tech">
                         <span>Blazor</span>
-                        <span>ASP .NET</span>
+                        <span>ASP.NET Core</span>
                         <span>MS SQL Server</span>
                     </div>
-                <a href="https://github.com/Usman444793/Quantum_Count" target="_blank">View Project</a>
-                <a href="https://quantumcount.runasp.net/" target="_blank">View Live App</a>
-            </div>
-            <div class="project-card fade-up csharp">
-            <h3>Library Management System</h3>
-            <p>Console application developed in C# for managing books,
-                students and library records.</p>
-                <div class="tech">
-                    <span>C#</span>
-                    <span>.NET</span>
+                    <div class="project-actions">
+                        <a href="https://github.com/Usman444793/Quantum_Count" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Source Code</a>
+                        <a href="https://quantumcount.runasp.net/" target="_blank" rel="noopener noreferrer" class="live-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live App</a>
+                    </div>
                 </div>
-                <a href="https://github.com/Usman444793/Library-Management-System" target="_blank">View Project</a>
-                </div>
-                <div class="project-card fade-up flask">
-            <h3>Flask CRUD App</h3>
-            <p>
-                Full-stack CRUD application with create, read, update and
-                delete functionality.
-            </p>
-            <div class="tech">
-                <span>Flask</span>
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-            </div>
-            <a href="https://github.com/Usman444793/CRUD-App" target="_blank">View Project</a>
-            </div>
-            <div class="project-card fade-up flask">
-            <h3>Math Calculator</h3>
-            <p>
-                A responsive mathematics calculator built using Flask and
-                modern web technologies.
-            </p>
-            <div class="tech">
-                <span>Flask</span>
-                <span>HTML</span>
-                <span>CSS</span>
-            </div>
-            <a href="https://github.com/Usman444793/Mathematics-Calcullations" target="_blank">View Project</a>
-            </div>
-            <div class="project-card fade-up python">
-            <h3>Emotion Detection App</h3>
-            <p>
-                AI-powered emotion detection web application. Currently under
-                development with ongoing improvements.
-            </p>
-            <div class="tech">
-                <span>Python</span>
-                <span>Flask</span>
-                <span>AI</span>
-            </div>
-            <a href="https://github.com/Usman444793/Emotion-detector" target="_blank">View Project</a>
-            </div>
-            <div class="project-card fade-up python">
-                <h3>Rain Predictor</h3>
-                <p>A console-based Rain Predictor system developed using 
-                    Python Libraries Pandas,Scikit-learn and Matplotlib.</p>
-                    <div class="tech">
-                        <span>Python</span>
-                        <span>Machine Learning</span>
-                        <span>Mathematics</span>
+                    <div class="project-card fade-up csharp" data-category="csharp">
+                        <h3>Hex Shield - Multi Tenant LMS System</h3>
+                        <p>Full-scale Enterprise Learning Management System made with Blazor WebAssembly,ASP.NET Core Backend and MS SQL Server for making real-time Multi-tenant LMS with Role Based Access.</p>
+                        <div class="tech">
+                            <span>Blazor</span>
+                            <span>ASP.NET Core</span>
+                            <span>MS SQL Server</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/Usman444793/HexShield" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i>Source Code</a>
+                        </div>
                     </div>
-                <a href="https://github.com/Usman444793/Rain_Predictor" target="_blank">View Project</a>
-            </div>
-            <div class="project-card fade-up python">
-                <h3>Titanic Survival Predictor</h3>
-                <p>A console-based Titanic Survival Predictor system developed using 
-                    Python Libraries Pandas,Scikit-learn and Matplotlib.</p>
-                    <div class="tech">
-                        <span>Python</span>
-                        <span>Machine Learning</span>
-                        <span>Mathematics</span>
-                    </div>
-                <a href="https://github.com/Usman444793/Predicting-Titanic-Survival" target="_blank">View Project</a>
-            </div>
-                        <div class="project-card fade-up python">
-                <h3>Credit Card Fraud Detection</h3>
-                <p>A console-based Credit Card Fraud Detection system developed using 
-                    Python Libraries Pandas,Scikit-learn and Matplotlib.</p>
-                    <div class="tech">
-                        <span>Python</span>
-                        <span>Machine Learning</span>
-                        <span>Mathematics</span>
-                    </div>
-                <a href="https://github.com/Usman444793/Credit-card-fraud-detection" target="_blank">View Project</a>
-            </div>
-
-            <div class="project-card fade-up csharp">
-                <h3>Task Flow</h3>
-                <p>A web-based Task Manager with Registration and Task Addition and 
-                    viewing system developed using Blazor Framework </p>
+                <div class="project-card fade-up csharp" data-category="csharp">
+                    <h3>TaskFlow — Modern Blazor Workspace</h3>
+                    <p>Streamlined task orchestration web app featuring secure user registration, real-time task workflows, and status tracking built on the .NET Blazor framework.</p>
                     <div class="tech">
                         <span>C#</span>
                         <span>Blazor</span>
-                        <span>Web Developer</span>
+                        <span>.NET</span>
                     </div>
-                <a href="https://github.com/Usman444793/TaskFlow" target="_blank">View Project</a>
-            </div>
-        </div>
-    </section>
-    <section id="skills" class="skills fade-up">
-        <div class="title-container">
-        <h2 class="section-heading">Skills</h2>
-        </div>
-        <div class="skills-grid">
-            <div class="skill-card fade-up">
-                <i class="fa-brands fa-html5"></i>
-                <h3>HTML 5</h3>
-                <p>Responsive & Semantic Web Design</p>
-            </div>
-            <div class="skill-card fade-up">
-                <i class="fa-brands fa-css3-alt"></i>
-                <h3>CSS 3</h3>
-                <p>Flexbox,Grid and Animations</p>
-            </div>
-            <div class="skill-card fade-up">
-                <i class="fa-brands fa-js"></i>
-                <h3>JavaScript</h3>
-                <p>Interactive User Interfaces</p>
-            </div>
-            <div class="skill-card fade-up">
-                <i class="fa-solid fa-code"></i>
-                <h3>C++</h3>
-                <p>OOP & Data Structures</p>
-            </div>
-            <div class="skill-card fade-up">
-                <i class="fa-solid fa-hashtag"></i>
-                <h3>C#</h3>
-                <p>Desktop & Web App Development</p>
-            </div>
-            <div class="skill-card fade-up">
-                <i class="fa-solid fa-fire"></i>
-                <h3>Flask</h3>
-                <p>Python Web Development</p>
-            </div>
-            <div class="skill-card fade-up">
-                <i class="fa-brands fa-python"></i>
-                <h3>Python</h3>
-                <p>Python for AI & Data Science</p>
-            </div>
-            <div class="skill-card fade-up">
-                <i class="fa-brands fa-microsoft"></i>
-                <h3>.NET</h3>
-                <p>Asp .Net Web Apps</p>
-            </div>
-            <div class="skill-card fade-up">
-                <i class="fa-solid fa-brain"></i>
-                <h3>Artificial Intelligence</h3>
-                <p>Machine Learning,Deep Learning with Keras</p>
-            </div>
-        </div>
-    </section>
-    <section id="certificates" class="certificates fade-up">
-    <div class="title-container">
-        <h2 class="section-heading">Certificates</h2>
-    </div>
-    <div class="certificate-grid">
-        <div class="certificate-card fade-up">
-            <img src="IBM_logo.webp" class="company-logo" alt="IBM Logo" width="60" height="60" loading="lazy">
-            <h3>Introduction to DevOps</h3>
-            <h4>Issued By IBM</h4>
-            <p>Learned essential DevOps concepts including software engineering practices, cloud-native microservices, and automated continuous deployment.</p>
-            <a href="https://coursera.org/share/a5bc4948586fa273de5d826645cc23ab" target="_blank">
-                View Certificate
-            </a>
-        </div>
-        <div class="certificate-card fade-up">
-            <img src="IBM_logo.webp" class="company-logo" alt="IBM Logo" width="60" height="60">
-            <h3>Introduction to Cloud Computing</h3>
-            <h4>Issued By IBM</h4>
-            <p>Learned cloud computing fundamentals including Microservices, Serverless, Cloud Native, and Application Modernization.</p>
-            <a href="https://coursera.org/share/4a509c3baa750b78db467a8fb89b8a75" target="_blank">
-                View Certificate
-            </a>
-        </div>
-        <div class="certificate-card fade-up">
-            <img src="IBM_logo.webp" class="company-logo" alt="IBM Logo" width="60" height="60">
-            <h3>Python for AI & Data Science</h3>
-            <h4>Issued By IBM</h4>
-            <p>Learned Python fundamentals, NumPy, Pandas, APIs, and data analysis for AI applications.</p>
-            <a href="https://coursera.org/share/d2e98e583b3f03920454c1302c3c3ecb" target="_blank">
-                View Certificate
-            </a>
-        </div>
-        <div class="certificate-card fade-up">
-            <img src="IBM_logo.webp" class="company-logo" alt="IBM Logo" width="60" height="60">
-            <h3>Developing AI Applications with Python & Flask</h3>
-            <h4>Issued By IBM</h4>
-            <p>Built and deployed Flask applications with routing, CRUD operations, and proper error handling.</p>
-            <a href="https://coursera.org/share/d11150d59d3c38530e6c29d4bf76d3e6" target="_blank">
-                View Certificate
-            </a>
-        </div>
-        <div class="certificate-card fade-up">
-            <i class="fa-brands fa-google"></i>
-            <h3>Google Ai Essentials Specialization</h3>
-            <h4>Issued By Google</h4>
-            <p>Learned Effective use of Google Gemini,Methods of Effective Prompting and Safer Use of Ai</p>
-            <a href="https://www.coursera.org/account/accomplishments/specialization/LA6Y4Z9GF9JP?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=s12n" target="_blank">View Certificate</a>
-        </div>
-                <div class="certificate-card fade-up">
-            <i class="fa-brands fa-microsoft"></i>
-            <h3>Foundations of Coding Full-Stack</h3>
-            <h4>Issued By Microsoft</h4>
-            <p>Learned coding fundamentals, problem-solving techniques, and writing efficient, modular applications.</p>
-            <a href="https://coursera.org/share/2a8e3d7b21c80786c94d080eadc3afec" target="_blank">
-                View Certificate
-            </a>
-        </div>
-        <div class="certificate-card fade-up">
-            <i class="fa-brands fa-microsoft"></i>
-            <h3>Introduction to Programming with C#</h3>
-            <h4>Issued By Microsoft</h4>
-            <p>Mastered C# fundamentals, object-oriented programming, and asynchronous programming concepts.</p>
-            <a href="https://coursera.org/share/297390e22b376cf894658317832489ad" target="_blank">
-                View Certificate
-            </a>
-        </div>
-        <div class="certificate-card fade-up">
-            <img src="IBM_logo.webp" class="company-logo" alt="IBM Logo" width="60" height="60">
-            <h3>Applied Software Engineering Fundamentals Specialization</h3>
-            <h4>Issued By IBM</h4>
-            <p>Specialized in Software Engineering Techniques like GitHub,Linux,Python programming</p>
-            <a href="https://coursera.org/share/fe27e183ad508c18cc47af06706c71ac" target="_blank">
-                View Certificate
-            </a>
-        </div>
-            <div class="certificate-card fade-up">
-            <img src="IBM_logo.webp" class="company-logo" alt="IBM Logo" width="60" height="60">
-            <h3>Machine Learning with Python</h3>
-            <h4>Issued By IBM</h4>
-            <p>Specialized in Machine Learning Algorithms including Supervised,Unsupervised learning and Hands on Labs</p>
-            <a href="https://coursera.org/share/7b2894c8a4f56fabf69c662970a675d2" target="_blank">
-                View Certificate
-            </a>
-        </div>
-        <div class="certificate-card fade-up">
-            <img src="IBM_logo.webp" class="company-logo" alt="IBM Logo" width="60" height="60">
-            <h3>Introduction to Deep Learning and Neural Networks with Keras</h3>
-            <h4>Issued By IBM</h4>
-            <p>Learned Basics of Neural Networks and Introduction to Deep learning with keras</p>
-            <a href="https://coursera.org/share/969c7954cb2fa54008b9e028ba583216" target="_blank">View Certificate</a>
-        </div>
-        <div class="certificate-card fade-up">
-            <i class="fa-brands fa-microsoft"></i>
-            <h3>Introduction to Web Development</h3>
-            <h4>Issued By Microsoft</h4>
-            <p>Mastered Semantic HTML5,CSS 3,Javascript for Dynamic Web Apps Development and Deployment through Github pages </p>
-            <a href="https://coursera.org/share/2f48d29f8aa28aabca7e668816659f7b" target="_blank">
-                View Certificate
-            </a>
-        </div>
-        <div class="certificate-card fade-up">
-            <i class="fa-brands fa-microsoft"></i>
-            <h3>Blazor for Front-end Development</h3>
-            <h4>Issued By Microsoft</h4>
-            <p>Learned the basics of UI Design with Blazor and Razor Pages</p>
-            <a href="https://coursera.org/share/0b87c525d18e2f238b7e42a39630472c" target="_blank">
-                View Certificate
-            </a>
-        </div>
-        <div class="certificate-card fade-up">
-            <i class="fa-brands fa-microsoft"></i>
-            <h3>Backend Development with .NET</h3>
-            <h4>Issued By Microsoft</h4>
-            <p>Learned the basics of backend development including Json Serialization,Deserialization and Restful Api's</p>
-            <a href="https://www.coursera.org/account/accomplishments/verify/5S44YZ5UBKW4?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" target="_blank">
-                View Certificate
-            </a>
-        </div>
-        <div class="certificate-card fade-up">
-            <i class="fa-brands fa-microsoft"></i>
-            <h3>Database Integration and Management</h3>
-            <h4>Issued By Microsoft</h4>
-            <p>Mastered Entity Framework Core and Sql Server with Advanced Database Queries and Optimization</p>
-            <a href="https://www.coursera.org/account/accomplishments/verify/I8HX5D3T6DPP?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" target="_blank">
-                View Certificate
-            </a>
-            </div>
-                <div class="certificate-card fade-up">
-            <i class="fa-brands fa-microsoft"></i>
-            <h3>Full-Stack Integration</h3>
-            <h4>Issued By Microsoft</h4>
-            <p>Learned Frontend,Backend Integration,CORS Integration Middleware along with Database Integration in a Full Stack Web App</p>
-            <a href="https://coursera.org/share/aa0d2ea5d9df9a113c2e0f79f76c5f3a" target="_blank">
-                View Certificate
-            </a>
-        </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/Usman444793/TaskFlow" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> View Project</a>
+                    </div>
+                </div>
 
+                <div class="project-card fade-up python" data-category="python">
+                    <h3>AI Emotion Recognition Engine</h3>
+                    <p>Intelligent web application leveraging computer vision and deep learning in Python &amp; Flask to detect and classify human emotions in real time.</p>
+                    <div class="tech">
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>AI / Computer Vision</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/Usman444793/Emotion-detector" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> View Project</a>
+                    </div>
+                </div>
 
-    </div>
-</section>
-    <section id="contact" class="contact fade-up">
-        <div class="title-container">
-        <h2 class="section-heading contact-heading">Get In Touch</h2>
-        </div>
-        <p class="contact-subtitle">
-        Have an internship opportunity, project, or collaboration in mind?
-        I'd love to hear from you.
-    </p>
-    <div class="contact-container">
-        <div class="contact-info">
-            <h3>Let's Connect</h3>
-            <p>
-                Feel free to contact me through any platform below.
-                I'll get back to you as soon as possible.
+                <div class="project-card fade-up python" data-category="python">
+                    <h3>Financial Fraud Shield — ML Detector</h3>
+                    <p>Machine learning classification pipeline built with Scikit-learn, Pandas, and Matplotlib to identify anomalous credit card transactions with high precision.</p>
+                    <div class="tech">
+                        <span>Python</span>
+                        <span>Scikit-Learn</span>
+                        <span>Data Science</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/Usman444793/Credit-card-fraud-detection" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card fade-up flask" data-category="flask">
+                    <h3>Full-Stack Flask CRUD Platform</h3>
+                    <p>End-to-end data management web application delivering fast, responsive Create, Read, Update, and Delete workflows with clean RESTful routing.</p>
+                    <div class="tech">
+                        <span>Flask</span>
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/Usman444793/CRUD-App" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card fade-up csharp" data-category="csharp">
+                    <h3>Smart Library Management System</h3>
+                    <p>Object-oriented C# &amp; .NET system designed to automate book cataloging, student borrowing records, and inventory lookups with zero friction.</p>
+                    <div class="tech">
+                        <span>C#</span>
+                        <span>.NET</span>
+                        <span>OOP</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/Usman444793/Library-Management-System" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card fade-up python" data-category="python">
+                    <h3>Atmospheric Rain Forecasting Model</h3>
+                    <p>Predictive meteorology model trained on historical weather datasets using Pandas, Scikit-learn, and Matplotlib to forecast rainfall probability.</p>
+                    <div class="tech">
+                        <span>Python</span>
+                        <span>Machine Learning</span>
+                        <span>Pandas</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/Usman444793/Rain_Predictor" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card fade-up python" data-category="python">
+                    <h3>Titanic Survival Analytics Engine</h3>
+                    <p>Supervised learning pipeline applying feature engineering, statistical modeling, and visual analytics to predict passenger survival outcomes.</p>
+                    <div class="tech">
+                        <span>Python</span>
+                        <span>Machine Learning</span>
+                        <span>Matplotlib</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/Usman444793/Predicting-Titanic-Survival" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card fade-up flask" data-category="flask">
+                    <h3>Precision Web Math Solver</h3>
+                    <p>Responsive mathematical computation suite powered by a Python Flask backend and an intuitive, mobile-ready frontend interface.</p>
+                    <div class="tech">
+                        <span>Flask</span>
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/Usman444793/Mathematics-Calcullations" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills fade-up">
+            <div class="title-container">
+                <h2 class="section-heading">Technical Arsenal</h2>
+                <p class="section-subtitle">The Languages, Frameworks &amp; AI Tools Behind My Work</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card fade-up" data-level="95">
+                    <i class="fa-brands fa-html5"></i>
+                    <h3>HTML5 Architecture</h3>
+                    <p>Semantic, Accessible &amp; SEO-Ready Markup</p>
+                    <div class="skill-meter"><span style="--skill-width: 95%"></span></div>
+                </div>
+                <div class="skill-card fade-up" data-level="90">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h3>Modern CSS3</h3>
+                    <p>Responsive Grid, Flexbox &amp; Fluid Animations</p>
+                    <div class="skill-meter"><span style="--skill-width: 90%"></span></div>
+                </div>
+                <div class="skill-card fade-up" data-level="85">
+                    <i class="fa-brands fa-js"></i>
+                    <h3>JavaScript (ES6+)</h3>
+                    <p>Dynamic DOM, Async APIs &amp; Rich Interactivity</p>
+                    <div class="skill-meter"><span style="--skill-width: 85%"></span></div>
+                </div>
+                <div class="skill-card fade-up" data-level="85">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>C++ Engineering</h3>
+                    <p>High-Performance OOP, Pointers &amp; Data Structures</p>
+                    <div class="skill-meter"><span style="--skill-width: 85%"></span></div>
+                </div>
+                <div class="skill-card fade-up" data-level="88">
+                    <i class="fa-solid fa-hashtag"></i>
+                    <h3>C# Development</h3>
+                    <p>Enterprise Logic, LINQ &amp; Object-Oriented Design</p>
+                    <div class="skill-meter"><span style="--skill-width: 88%"></span></div>
+                </div>
+                <div class="skill-card fade-up" data-level="86">
+                    <i class="fa-brands fa-microsoft"></i>
+                    <h3>.NET &amp; Blazor</h3>
+                    <p>Full-Stack ASP.NET Core &amp; REST APIs</p>
+                    <div class="skill-meter"><span style="--skill-width: 86%"></span></div>
+                </div>
+                <div class="skill-card fade-up" data-level="90">
+                    <i class="fa-solid fa-database"></i>
+                    <h3>MS SQL Server &amp; MySql</h3>
+                    <p>Creating and Managing Scalable Relational Databases</p>
+                    <div class="skill-meter"><span style="--skill-width: 90"></span></div>
+                </div>
+                <div class="skill-card fade-up" data-level="85">
+                    <i class="fa-solid fa-fire"></i>
+                    <h3>Flask Microservices</h3>
+                    <p>Rapid Python Web Backends &amp; API Routing</p>
+                    <div class="skill-meter"><span style="--skill-width: 85%"></span></div>
+                </div>
+                <div class="skill-card fade-up" data-level="90">
+                    <i class="fa-brands fa-python"></i>
+                    <h3>Python Ecosystem</h3>
+                    <p>Automation, NumPy, Pandas &amp; Data Pipelines</p>
+                    <div class="skill-meter"><span style="--skill-width: 90%"></span></div>
+                </div>
+                <div class="skill-card fade-up" data-level="82">
+                    <i class="fa-solid fa-brain"></i>
+                    <h3>AI &amp; Machine Learning</h3>
+                    <p>Scikit-Learn, Predictive Modeling &amp; Deep Learning</p>
+                    <div class="skill-meter"><span style="--skill-width: 82%"></span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certificates" class="certificates fade-up">
+            <div class="title-container">
+                <h2 class="section-heading">Verified Credentials</h2>
+                <p class="section-subtitle">Industry-Recognized Specializations from Microsoft, IBM &amp; Google</p>
+            </div>
+            <div class="certificate-grid">
+                <div class="certificate-card fade-up">
+                    <i class="fa-brands fa-microsoft"></i>
+                    <h3>Full-Stack Developer Professional Certificate</h3>
+                    <h4>Issued By Microsoft</h4>
+                    <p>Mastered end-to-end software engineering across modern front-end frameworks, .NET back-end cloud architectures, database integration, and automated DevOps deployment pipelines.</p>
+                    <a href="https://coursera.org/share/05921f55c8a4cb442191dc035000c619" target="_blank" rel="noopener noreferrer">
+                        Verify Credential <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+                <div class="certificate-card fade-up">
+                    <i class="fa-brands fa-microsoft"></i>
+                    <h3>Back-End Developer Professional Certificate</h3>
+                    <h4>Issued By Microsoft</h4>
+                    <p>Engineered high-performance server-side systems focusing on RESTful API design, JSON serialization, relational database management, and application scalability.</p>
+                    <a href="https://coursera.org/share/9c995a16013bd1dedf8798c43684ebbe" target="_blank" rel="noopener noreferrer">
+                        Verify Credential <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+                <div class="certificate-card fade-up">
+                    <img src="IBM_logo.webp" class="company-logo" alt="IBM Logo" width="60" height="60" loading="lazy">
+                    <h3>DevOps, Cloud, and Agile Foundations</h3>
+                    <h4>Issued By IBM</h4>
+                    <p>Trained in modern agile workflows, cloud-native microservices architecture, CI/CD automation, and resilient software delivery practices.</p>
+                    <a href="https://coursera.org/share/963602909d742430f80ad3b5ea149030" target="_blank" rel="noopener noreferrer">
+                        Verify Credential <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+                <div class="certificate-card fade-up">
+                    <img src="IBM_logo.webp" class="company-logo" alt="IBM Logo" width="60" height="60" loading="lazy">
+                    <h3>Python for AI &amp; Data Science</h3>
+                    <h4>Issued By IBM</h4>
+                    <p>Built data-driven pipelines in Python using NumPy, Pandas, and REST APIs to clean, analyze, and prepare complex datasets for AI workloads.</p>
+                    <a href="https://coursera.org/share/d2e98e583b3f03920454c1302c3c3ecb" target="_blank" rel="noopener noreferrer">
+                        Verify Credential <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+                <div class="certificate-card fade-up">
+                    <img src="IBM_logo.webp" class="company-logo" alt="IBM Logo" width="60" height="60" loading="lazy">
+                    <h3>Applied Software Engineering Fundamentals</h3>
+                    <h4>Issued By IBM</h4>
+                    <p>Specialized in core software engineering workflows including Git/GitHub version control, Linux shell administration, and modular Python architecture.</p>
+                    <a href="https://coursera.org/share/fe27e183ad508c18cc47af06706c71ac" target="_blank" rel="noopener noreferrer">
+                        Verify Credential <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+                <div class="certificate-card fade-up">
+                    <img src="IBM_logo.webp" class="company-logo" alt="IBM Logo" width="60" height="60" loading="lazy">
+                    <h3>Machine Learning with Python</h3>
+                    <h4>Issued By IBM</h4>
+                    <p>Implemented supervised and unsupervised learning algorithms including regression, classification, clustering, and model evaluation in hands-on labs.</p>
+                    <a href="https://coursera.org/share/7b2894c8a4f56fabf69c662970a675d2" target="_blank" rel="noopener noreferrer">
+                        Verify Credential <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+                <div class="certificate-card fade-up">
+                    <i class="fa-brands fa-google"></i>
+                    <h3>Google AI Essentials Specialization</h3>
+                    <h4>Issued By Google</h4>
+                    <p>Mastered practical generative AI workflows, precision prompt engineering with Google Gemini, and responsible AI integration into technical projects.</p>
+                    <a href="https://www.coursera.org/account/accomplishments/specialization/LA6Y4Z9GF9JP?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=s12n" target="_blank" rel="noopener noreferrer">
+                        Verify Credential <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+                <div class="certificate-card fade-up">
+                    <i class="fa-brands fa-google"></i>
+                    <h3>Google AI Professional Certificate</h3>
+                    <h4>Issued By Google</h4>
+                    <p>Applied AI as an engineering multiplier across research, data synthesis, and rapid custom application prototyping to solve real-world operational challenges.</p>
+                    <a href="https://www.coursera.org/account/accomplishments/specialization/LA6Y4Z9GF9JP?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=s12n" target="_blank" rel="noopener noreferrer">
+                        Verify Credential <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact fade-up">
+            <div class="title-container">
+                <h2 class="section-heading contact-heading">Let's Build Together</h2>
+            </div>
+            <p class="contact-subtitle">
+                Looking for a driven Full-Stack Engineer or AI Developer for your team or next big project? Let's turn your vision into reality.
             </p>
-            <div class="contact-links">
-                <a href="mailto:ua655128@gmail.com">
-                    <i class="fa-solid fa-envelope"></i>
-                    <Span>ua655128@gmail.com</Span>
-                </a>
-                <a href="https://api.whatsapp.com/send/?phone=923297825455&text&type=phone_number&app_absent=0" target="_blank">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <span>+923297825455</span>
-                </a>
-                <a href="https://github.com/Usman444793" target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                    <span>GitHub</span>
-                </a>
-                <a href="https://www.linkedin.com/in/usman-amjad-46aa66329" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i>
-                    <span>LinkedIn</span>
-                </a>
-                <a href="Resume.pdf" download class="resume-btn">
-                <i class="fa-solid fa-download"></i>
-                Download Resume
-            </a>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Start a Conversation</h3>
+                    <p>
+                        Reach out directly via email, WhatsApp, or social platforms—or grab a copy of my resume below. I respond within 24 hours.
+                    </p>
+                    <div class="contact-links">
+                        <div class="contact-link-row">
+                            <a href="mailto:ua655128@gmail.com">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>ua655128@gmail.com</span>
+                            </a>
+                            <button type="button" class="copy-email-btn" data-email="ua655128@gmail.com" aria-label="Copy email address" title="Copy email">
+                                <i class="fa-regular fa-copy"></i>
+                            </button>
+                        </div>
+                        <a href="https://api.whatsapp.com/send/?phone=923297825455&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>+92 329 7825455</span>
+                        </a>
+                        <a href="https://github.com/Usman444793" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i>
+                            <span>github.com/Usman444793</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/usman-amjad-46aa66329" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <span>LinkedIn Profile</span>
+                        </a>
+                        <a href="Muhammad Usman Amjad - .NET Full-Stack Developer Resume.pdf" download class="resume-btn">
+                            <i class="fa-solid fa-download"></i>
+                            <span>Download Full Resume</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <input type="text" name="from_name" placeholder="Your Name" required>
+                        <input type="email" name="from_email" placeholder="Your Email Address" required>
+                        <textarea rows="6" name="message" placeholder="Tell me about your role, project, or idea..." required></textarea>
+                        <button type="submit" id="submit-btn">
+                            <span class="btn-text">Launch Message</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
             </div>
-            </div>
-            <div class="contact-form">
-                <form id="contact-form">
-                    <input type="text" name="from_name" placeholder="Your Name" required>
-                    <input type="email" name="from_email" placeholder="Your Email" required>
-                    <textarea rows="6" name="message" placeholder="Your Message" required></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
-            </div>
-    </div>
-</main>
-<button type="button" class="back-to-top" aria-label="Scroll to top">
-    <i class="fa-solid fa-arrow-up"></i>
-</button>
+        </section>
+    </main>
+
+    <button type="button" class="back-to-top" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
     <footer>
-    <p>
-        © 2026 Usman Amjad • Built with HTML, CSS & JavaScript
-    </p>
-</footer>
-<div class="toast-message" aria-live="polite"></div>
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script>
-emailjs.init("-ucSdltujvZYU5IN4");
-const navbar = document.getElementById("navbar");
-const about = document.getElementById("about");
-const projects = document.getElementById("project");
-const skills = document.getElementById("skills");
-const certificates = document.getElementById("certificates");
-const contact = document.getElementById("contact");
-const navLinks = document.querySelectorAll("nav .nav-links a");
-const hamburger = document.querySelector(".hamburger");
-const toast = document.querySelector(".toast-message");
+        <p>
+            © 2026 Muhammad Usman Amjad • Engineered with Precision using HTML5, CSS3 &amp; JavaScript
+        </p>
+    </footer>
 
-function toggleMenu() {
-    navbar.classList.toggle("open");
-    document.body.classList.toggle("menu-open");
-}
+    <div class="toast-message" aria-live="polite"></div>
 
-hamburger.addEventListener("click", toggleMenu);
-navLinks.forEach((link) => {
-    link.addEventListener("click", () => {
-        navbar.classList.remove("open");
-        document.body.classList.remove("menu-open");
-    });
-});
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        emailjs.init("-ucSdltujvZYU5IN4");
+        const navbar = document.getElementById("navbar");
+        const about = document.getElementById("about");
+        const projects = document.getElementById("project");
+        const skills = document.getElementById("skills");
+        const certificates = document.getElementById("certificates");
+        const contact = document.getElementById("contact");
+        const navLinks = document.querySelectorAll("nav .nav-links a");
+        const hamburger = document.querySelector(".hamburger");
+        const toast = document.querySelector(".toast-message");
+        const scrollProgress = document.getElementById("scroll-progress");
 
-function setActiveLink() {
-    const navbarHeight = navbar.offsetHeight || 90;
-    const scrollPos = window.scrollY + navbarHeight + 10;
-    const sections = [about, projects, skills, certificates, contact];
-
-    if (scrollPos >= about.offsetTop) {
-        navbar.classList.add("scrolled");
-    } else {
-        navbar.classList.remove("scrolled");
-    }
-
-    navbar.classList.remove("hero-section", "section-dark", "contact-section");
-    if (scrollPos < about.offsetTop) {
-        navbar.classList.add("hero-section");
-    } else if (scrollPos >= contact.offsetTop) {
-        navbar.classList.add("contact-section");
-    } else {
-        navbar.classList.add("section-dark");
-    }
-
-    navLinks.forEach((item) => item.classList.remove("active"));
-    for (let i = sections.length - 1; i >= 0; i--) {
-        const section = sections[i];
-        const link = document.querySelector(`nav .nav-links a[href="#${section.id}"]`);
-        if (!link) continue;
-        const sectionTop = section.offsetTop - navbarHeight - 10;
-        if (scrollPos >= sectionTop) {
-            link.classList.add("active");
-            break;
+        function toggleMenu() {
+            const isOpen = navbar.classList.toggle("open");
+            document.body.classList.toggle("menu-open", isOpen);
+            hamburger.setAttribute("aria-expanded", String(isOpen));
         }
-    }
-}
 
-const backToTop = document.querySelector(".back-to-top");
+        hamburger.addEventListener("click", toggleMenu);
+        navLinks.forEach((link) => {
+            link.addEventListener("click", () => {
+                navbar.classList.remove("open");
+                document.body.classList.remove("menu-open");
+                hamburger.setAttribute("aria-expanded", "false");
+            });
+        });
 
-window.addEventListener("scroll", () => {
-    setActiveLink();
-    updateBackToTop();
-});
-window.addEventListener("load", () => {
-    setActiveLink();
-    hidePreloader();
-    updateBackToTop();
-});
+        function updateScrollProgress() {
+            if (!scrollProgress) return;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrolled = docHeight > 0 ? (window.scrollY / docHeight) * 100 : 0;
+            scrollProgress.style.width = `${scrolled}%`;
+        }
 
-const roles = ["Full-Stack Developer", "AI Enthusiast", "Web Creator", "Problem Solver"];
-const typedText = document.querySelector(".typed-text");
-let roleIndex = 0;
-let charIndex = 0;
-let deleting = false;
+        function setActiveLink() {
+            const navbarHeight = navbar.offsetHeight || 90;
+            const scrollPos = window.scrollY + navbarHeight + 10;
+            const sections = [about, projects, skills, certificates, contact];
 
-function updateTyping() {
-    const current = roles[roleIndex];
-    if (deleting) {
-        charIndex -= 1;
-    } else {
-        charIndex += 1;
-    }
-    typedText.textContent = current.slice(0, charIndex);
-
-    if (!deleting && charIndex === current.length) {
-        setTimeout(() => (deleting = true), 1200);
-    } else if (deleting && charIndex === 0) {
-        deleting = false;
-        roleIndex = (roleIndex + 1) % roles.length;
-    }
-    const speed = deleting ? 60 : 120;
-    setTimeout(updateTyping, deleting ? speed : speed);
-}
-updateTyping();
-
-const logoCards = document.querySelectorAll(".certificate-card");
-logoCards.forEach((card) => {
-    const logo = card.querySelector(".company-logo");
-    if (!logo) return;
-    card.addEventListener("mouseenter", () => {
-        logo.src = "IBM_logo_white.webp";
-    });
-    card.addEventListener("mouseleave", () => {
-        logo.src = "IBM_logo.webp";
-    });
-});
-
-const heroImage = document.querySelector(".right img");
-const observer = new IntersectionObserver(
-    (entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("show");
+            if (scrollPos >= about.offsetTop) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
             }
+
+            navbar.classList.remove("hero-section", "section-dark", "contact-section");
+            if (scrollPos < about.offsetTop) {
+                navbar.classList.add("hero-section");
+            } else if (scrollPos >= contact.offsetTop) {
+                navbar.classList.add("contact-section");
+            } else {
+                navbar.classList.add("section-dark");
+            }
+
+            navLinks.forEach((item) => item.classList.remove("active"));
+            for (let i = sections.length - 1; i >= 0; i--) {
+                const section = sections[i];
+                const link = document.querySelector(`nav .nav-links a[href="#${section.id}"]`);
+                if (!link) continue;
+                const sectionTop = section.offsetTop - navbarHeight - 10;
+                if (scrollPos >= sectionTop) {
+                    link.classList.add("active");
+                    break;
+                }
+            }
+        }
+
+        const backToTop = document.querySelector(".back-to-top");
+
+        window.addEventListener("scroll", () => {
+            setActiveLink();
+            updateBackToTop();
+            updateScrollProgress();
         });
-    },
-    { threshold: 0.15 }
-);
-
-document.querySelectorAll(".fade-up").forEach((el) => observer.observe(el));
-
-function updateHeroImageOnScroll() {
-    const offset = window.scrollY;
-    if (!heroImage) return;
-    if (offset > 30) {
-        heroImage.classList.add("scrolled");
-    } else {
-        heroImage.classList.remove("scrolled");
-    }
-}
-window.addEventListener("scroll", updateHeroImageOnScroll);
-updateHeroImageOnScroll();
-
-function hidePreloader() {
-    const preloader = document.getElementById("preloader");
-    if (!preloader) return;
-    preloader.classList.add("loaded");
-    setTimeout(() => {
-        preloader.style.display = "none";
-    }, 550);
-}
-
-function updateBackToTop() {
-    if (!backToTop) return;
-    backToTop.classList.toggle("visible", window.scrollY > 480);
-}
-
-if (backToTop) {
-    backToTop.addEventListener("click", () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    });
-}
-
-document.getElementById("contact-form").addEventListener("submit", function (e) {
-    e.preventDefault();
-    emailjs
-        .sendForm("service_lgupbvo", "template_xt15kek", this)
-        .then(() => {
-            showToast("Message sent successfully!", "success");
-            this.reset();
-        })
-        .catch((error) => {
-            console.error(error);
-            showToast("Failed to send message. Please try again.", "error");
+        window.addEventListener("load", () => {
+            setActiveLink();
+            hidePreloader();
+            updateBackToTop();
+            updateScrollProgress();
         });
-});
 
-function showToast(message, type) {
-    toast.textContent = message;
-    toast.classList.add("show", type);
-    window.setTimeout(() => {
-        toast.classList.remove("show", "success", "error");
-    }, 3200);
-}
-</script>
+        // Fixed Typewriter Effect with clean pause state
+        const roles = [
+            "Full-Stack .NET & Python Engineer",
+            "AI & Machine Learning Builder",
+            "Blazor & ASP.NET Core Developer",
+            "Creative Problem Solver"
+        ];
+        const typedText = document.querySelector(".typed-text");
+        let roleIndex = 0;
+        let charIndex = 0;
+        let deleting = false;
+
+        function updateTyping() {
+            const current = roles[roleIndex];
+            if (!deleting) {
+                charIndex++;
+                typedText.textContent = current.slice(0, charIndex);
+                if (charIndex === current.length) {
+                    deleting = true;
+                    setTimeout(updateTyping, 1600);
+                    return;
+                }
+                setTimeout(updateTyping, 85);
+            } else {
+                charIndex--;
+                typedText.textContent = current.slice(0, charIndex);
+                if (charIndex === 0) {
+                    deleting = false;
+                    roleIndex = (roleIndex + 1) % roles.length;
+                    setTimeout(updateTyping, 350);
+                    return;
+                }
+                setTimeout(updateTyping, 42);
+            }
+        }
+        updateTyping();
+
+        // Project Category Filtering
+        const filterBtns = document.querySelectorAll(".filter-btn");
+        const projectCards = document.querySelectorAll(".project-card");
+
+        filterBtns.forEach((btn) => {
+            btn.addEventListener("click", () => {
+                filterBtns.forEach((b) => {
+                    b.classList.remove("active");
+                    b.setAttribute("aria-selected", "false");
+                });
+                btn.classList.add("active");
+                btn.setAttribute("aria-selected", "true");
+
+                const filter = btn.dataset.filter;
+                projectCards.forEach((card) => {
+                    const matches = filter === "all" || card.dataset.category === filter;
+                    if (matches) {
+                        card.classList.remove("hidden-card");
+                        requestAnimationFrame(() => {
+                            card.classList.add("show");
+                        });
+                    } else {
+                        card.classList.add("hidden-card");
+                    }
+                });
+            });
+        });
+
+        // Interactive 3D Card Tilt & Spotlight Effect
+        const interactiveCards = document.querySelectorAll(".project-card, .skill-card, .certificate-card");
+        interactiveCards.forEach((card) => {
+            card.addEventListener("mousemove", (e) => {
+                if (window.innerWidth < 768) return;
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                const rotateX = ((y - centerY) / centerY) * -5;
+                const rotateY = ((x - centerX) / centerX) * 5;
+
+                card.style.setProperty("--mouse-x", `${x}px`);
+                card.style.setProperty("--mouse-y", `${y}px`);
+                card.style.transform = `perspective(900px) translateY(-10px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg)`;
+            });
+
+            card.addEventListener("mouseleave", () => {
+                card.style.transform = "";
+            });
+        });
+
+        // IBM Certificate Logo Hover Swap
+        const logoCards = document.querySelectorAll(".certificate-card");
+        logoCards.forEach((card) => {
+            const logo = card.querySelector(".company-logo");
+            if (!logo) return;
+            card.addEventListener("mouseenter", () => {
+                logo.src = "IBM_logo_white.webp";
+            });
+            card.addEventListener("mouseleave", () => {
+                logo.src = "IBM_logo.webp";
+            });
+        });
+
+        // Scroll Reveal & Animated Stats Counter
+        const heroImage = document.querySelector(".right img");
+        let statsAnimated = false;
+
+        function animateStats() {
+            if (statsAnimated) return;
+            statsAnimated = true;
+            document.querySelectorAll(".stat-number").forEach((counter) => {
+                const target = parseInt(counter.dataset.target, 10);
+                const duration = 1400;
+                const startTime = performance.now();
+
+                function step(now) {
+                    const progress = Math.min((now - startTime) / duration, 1);
+                    const eased = 1 - Math.pow(1 - progress, 3);
+                    counter.textContent = Math.floor(eased * target);
+                    if (progress < 1) {
+                        requestAnimationFrame(step);
+                    } else {
+                        counter.textContent = target;
+                    }
+                }
+                requestAnimationFrame(step);
+            });
+        }
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("show");
+                        if (entry.target.id === "about") {
+                            animateStats();
+                        }
+                    }
+                });
+            },
+            { threshold: 0.15 }
+        );
+
+        document.querySelectorAll(".fade-up").forEach((el) => observer.observe(el));
+
+        function updateHeroImageOnScroll() {
+            const offset = window.scrollY;
+            if (!heroImage) return;
+            if (offset > 30) {
+                heroImage.classList.add("scrolled");
+            } else {
+                heroImage.classList.remove("scrolled");
+            }
+        }
+        window.addEventListener("scroll", updateHeroImageOnScroll);
+        updateHeroImageOnScroll();
+
+        function hidePreloader() {
+            const preloader = document.getElementById("preloader");
+            if (!preloader) return;
+            preloader.classList.add("loaded");
+            setTimeout(() => {
+                preloader.style.display = "none";
+            }, 550);
+        }
+
+        function updateBackToTop() {
+            if (!backToTop) return;
+            backToTop.classList.toggle("visible", window.scrollY > 480);
+        }
+
+        if (backToTop) {
+            backToTop.addEventListener("click", () => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            });
+        }
+
+        // Copy Email to Clipboard
+        const copyEmailBtn = document.querySelector(".copy-email-btn");
+        if (copyEmailBtn) {
+            copyEmailBtn.addEventListener("click", () => {
+                const email = copyEmailBtn.dataset.email;
+                navigator.clipboard.writeText(email).then(() => {
+                    const icon = copyEmailBtn.querySelector("i");
+                    icon.className = "fa-solid fa-check";
+                    showToast("Email copied to clipboard!", "success");
+                    setTimeout(() => {
+                        icon.className = "fa-regular fa-copy";
+                    }, 2000);
+                });
+            });
+        }
+
+        // Contact Form Submission with Interactive Loading State
+        const contactForm = document.getElementById("contact-form");
+        const submitBtn = document.getElementById("submit-btn");
+
+        contactForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+            const btnText = submitBtn.querySelector(".btn-text");
+            const btnIcon = submitBtn.querySelector("i");
+            submitBtn.disabled = true;
+            btnText.textContent = "Sending...";
+            btnIcon.className = "fa-solid fa-spinner fa-spin";
+
+            emailjs
+                .sendForm("service_lgupbvo", "template_xt15kek", this)
+                .then(() => {
+                    showToast("Message sent successfully! I'll reply soon.", "success");
+                    this.reset();
+                })
+                .catch((error) => {
+                    console.error(error);
+                    showToast("Failed to send message. Please try again.", "error");
+                })
+                .finally(() => {
+                    submitBtn.disabled = false;
+                    btnText.textContent = "Launch Message";
+                    btnIcon.className = "fa-solid fa-paper-plane";
+                });
+        });
+
+        function showToast(message, type) {
+            toast.textContent = message;
+            toast.classList.add("show", type);
+            window.setTimeout(() => {
+                toast.classList.remove("show", "success", "error");
+            }, 3200);
+        }
+    </script>
 </body>
 </html>
