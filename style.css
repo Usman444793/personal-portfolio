@@ -829,7 +829,7 @@ body.hero-ready .hero-chip.chip-4 { animation-delay: -4.5s; }
     color: #d6c5c5;
 }
 
-/* Inter-Section Bordered Preview Marquee Ribbons (Left -> Right) */
+/* Inter-Section Bordered Preview Marquee Ribbons */
 .section-marquee {
     position: relative;
     width: 100%;
@@ -859,7 +859,7 @@ body.hero-ready .hero-chip.chip-4 { animation-delay: -4.5s; }
     display: flex;
     width: max-content;
     will-change: transform;
-    animation: marqueeLeftToRight var(--marquee-duration, 44s) linear infinite;
+    animation: marqueeFlow var(--marquee-duration, 44s) linear infinite;
 }
 
 .marquee-group {
@@ -897,12 +897,12 @@ body.hero-ready .hero-chip.chip-4 { animation-delay: -4.5s; }
     flex-shrink: 0;
 }
 
-@keyframes marqueeLeftToRight {
+@keyframes marqueeFlow {
     0% {
-        transform: translate3d(-50%, 0, 0);
+        transform: translate3d(0%, 0, 0);
     }
     100% {
-        transform: translate3d(0%, 0, 0);
+        transform: translate3d(-50%, 0, 0);
     }
 }
 
