@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    <url>
+        <loc>https://usman444793.github.io/personal-portfolio/</loc>
+        <lastmod>2026-11-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://usman444793.github.io/personal-portfolio/Usman%20Amjad.webp</image:loc>
+            <image:title>Muhammad Usman Amjad — .NET Full-Stack Engineer &amp; AI Developer</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://usman444793.github.io/personal-portfolio/logo.webp</image:loc>
+            <image:title>Usman Amjad Portfolio Logo</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://usman444793.github.io/personal-portfolio/Muhammad%20Usman%20Amjad%20-%20.NET%20Full-Stack%20Developer%20Resume.pdf</loc>
+        <lastmod>2026-11-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+</urlset>

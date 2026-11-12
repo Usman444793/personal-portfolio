@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://usman444793.github.io/personal-portfolio/sitemap.xml
